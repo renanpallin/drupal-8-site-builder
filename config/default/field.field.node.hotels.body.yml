@@ -1,0 +1,22 @@
+uuid: 3ddccd49-9c8c-4fd0-bc9a-c27a1e7b0297
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.hotels
+  module:
+    - text
+id: node.hotels.body
+field_name: body
+entity_type: node
+bundle: hotels
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

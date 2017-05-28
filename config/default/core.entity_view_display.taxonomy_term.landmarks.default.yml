@@ -1,0 +1,44 @@
+uuid: 4c2d41f3-e949-4e07-be17-1f55eb943b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.landmarks.field_landmark_picture
+    - field.field.taxonomy_term.landmarks.field_landmark_website
+    - image.style.thumbnail
+    - taxonomy.vocabulary.landmarks
+  module:
+    - image
+    - link
+    - text
+id: taxonomy_term.landmarks.default
+targetEntityType: taxonomy_term
+bundle: landmarks
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_landmark_picture:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    type: image
+  field_landmark_website:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      target: _blank
+      url_only: false
+      url_plain: false
+      rel: '0'
+    third_party_settings: {  }
+    type: link
+hidden: {  }

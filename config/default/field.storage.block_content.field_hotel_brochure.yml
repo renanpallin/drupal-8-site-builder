@@ -1,0 +1,23 @@
+uuid: 03013775-3890-4feb-aaf4-f2f0e08f5af6
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - file
+id: block_content.field_hotel_brochure
+field_name: field_hotel_brochure
+entity_type: block_content
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

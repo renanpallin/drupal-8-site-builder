@@ -1,0 +1,31 @@
+uuid: f48485f4-207f-4160-a3c0-b0ed4a41b31a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:brochure:7205fc02-6593-4141-8769-10c3d6f947ac'
+  module:
+    - block_content
+    - system
+  theme:
+    - bartik
+id: ibishotelbrochure
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:7205fc02-6593-4141-8769-10c3d6f947ac'
+settings:
+  id: 'block_content:7205fc02-6593-4141-8769-10c3d6f947ac'
+  label: 'Hotel Drupal Brochure'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/64
+    negate: false
+    context_mapping: {  }

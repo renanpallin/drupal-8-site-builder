@@ -1,0 +1,23 @@
+uuid: 6a34fb0e-7945-4642-8802-ab701ac5e32f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_landmark_website
+    - taxonomy.vocabulary.landmarks
+  module:
+    - link
+id: taxonomy_term.landmarks.field_landmark_website
+field_name: field_landmark_website
+entity_type: taxonomy_term
+bundle: landmarks
+label: 'Landmark Website'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

@@ -1,0 +1,28 @@
+uuid: 52960a8c-d22e-4f5c-93cf-fe205017182f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hotel_land
+    - node.type.hotels
+    - taxonomy.vocabulary.landmarks
+id: node.hotels.field_hotel_land
+field_name: field_hotel_land
+entity_type: node
+bundle: hotels
+label: 'Hotel Landmark'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      landmarks: landmarks
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,51 @@
+uuid: bd52b30a-ee78-4c03-97a2-c537f3b35f4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hotels.body
+    - field.field.node.hotels.field_hotel_land
+    - field.field.node.hotels.field_hotel_map
+    - field.field.node.hotels.field_hotel_phone
+    - field.field.node.hotels.field_hotel_picture
+    - field.field.node.hotels.field_hotel_slides
+    - field.field.node.hotels.field_hotel_video
+    - field.field.node.hotels.field_hotel_website
+    - node.type.hotels
+  module:
+    - image
+    - text
+    - user
+id: node.hotels.teaser
+targetEntityType: node
+bundle: hotels
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_hotel_picture:
+    type: image
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_hotel_land: true
+  field_hotel_map: true
+  field_hotel_phone: true
+  field_hotel_slides: true
+  field_hotel_video: true
+  field_hotel_website: true

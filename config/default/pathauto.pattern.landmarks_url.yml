@@ -1,0 +1,23 @@
+uuid: e1cf506f-6aba-44ca-8ed8-b0bb2fa56029
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: landmarks_url
+label: 'Landmarks URL'
+type: 'canonical_entities:taxonomy_term'
+pattern: 'landmark/[term:name]'
+selection_criteria:
+  c5596b35-95ad-44f8-890c-5416a95bc775:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      landmarks: landmarks
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: c5596b35-95ad-44f8-890c-5416a95bc775
+selection_logic: and
+weight: -5
+relationships: {  }

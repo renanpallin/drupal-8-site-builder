@@ -1,0 +1,32 @@
+uuid: 185908a4-f9db-4adc-b2a2-d6da080bbde4
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.field.comment.comment.comment_body
+    - field.field.comment.comment.field_comment_email
+  module:
+    - text
+_core:
+  default_config_hash: 1yBeJcGufCbnbSolmaYgTIXZWYUaO7kw6xszGA8TYs8
+id: comment.comment.default
+targetEntityType: comment
+bundle: comment
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_comment_email:
+    weight: 101
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  links:
+    weight: 100
+hidden: {  }

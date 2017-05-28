@@ -1,0 +1,22 @@
+uuid: dbc1a107-00fa-4ccb-8046-5052038bcc73
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.brochure
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.brochure.body
+field_name: body
+entity_type: block_content
+bundle: brochure
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

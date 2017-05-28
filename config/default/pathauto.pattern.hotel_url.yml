@@ -1,0 +1,22 @@
+uuid: e05bd9f5-bbcb-49e3-a034-6c29402c6c9a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: hotel_url
+label: 'Hotel URL'
+type: 'canonical_entities:node'
+pattern: 'hotel/[node:title]'
+selection_criteria:
+  cadad4de-b1a7-4534-865a-8c5ac343b164:
+    id: node_type
+    bundles:
+      hotels: hotels
+    negate: false
+    context_mapping:
+      node: node
+    uuid: cadad4de-b1a7-4534-865a-8c5ac343b164
+selection_logic: and
+weight: -5
+relationships: {  }
