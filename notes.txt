@@ -1,0 +1,45 @@
+O GRID do Drupal View é uma table ou são divs?
+Dá uma olhadinha nas primieras páginas dos módulos para conhecer um pouco mais
+Ver o inline edid form lá que cria nodes na entity reference de outro
+Módulo Book do core
+ver o CTools
+merda com o themes:
+	Quando você muda o tema e tem blocos em uma region que não existe mais, parece que ele fica lá e não é mostrado. por exemplo "Primary menu" não existe no seu novo theme, mas os blocos ficam lá.
+
+masquerade => Ver como um determinado usuário
+backup and migrade => pode cair no exame, estava no curso
+Scheduler => Programar publicações de conteúdos
+gmap => Utiliza o Text (Plain)
+Admin Toolbar => Hoverzinho nas coisas, bem legal
+Vídeo embebed Field => Youtube, vimeo e mais uma caralhada de outros
+views_slideshow => Slideshowzin, utiliza o field images
+
+Content: (2 tipos) 
+	- Content entities => Custom fields, like nodes, guardadas no banco, custom blocks, users, taxonomy terms (s que já vem com o Drupal)
+	- Configuration Entities => Pode ir para diferentes ambientes, custom content types, user roles (os uqe você exporta)
+
+
+ver como funciona essas paradas de base theme aí
+
+
+Taxonomy:
+	Agora elas podem ter fields, graças à Entity API
+
+User:
+	Também fazem parte da Entity API, e pode conter fields (configuration -> account manager)
+
+Comments:
+	Entity API também, pode ter fields
+
+
+
+Criamos um block para cada hotel com um file. Isso é uma bosta, quero um field file e um display desse field em um bloco. (views?)
+
+
+
+
+	
+
+
+podemos contribuir colocando o JQuery aim no menu do drupal. Já anotei isso em algum lugar
+Contribuir com um módulo que permite configurações nos machine names que ele gera, como uma padronização nova. p_ para paragraphs, ct_<content_initials> para fields em conteúdos, <nome>_url para Pathauto etc
