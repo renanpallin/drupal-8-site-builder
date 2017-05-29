@@ -1,0 +1,22 @@
+uuid: dfb17c18-cd9f-4819-9057-6b532f399826
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cityguide
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: cityguide_powered
+theme: cityguide
+region: footer
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

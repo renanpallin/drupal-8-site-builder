@@ -13,6 +13,20 @@ gmap => Utiliza o Text (Plain)
 Admin Toolbar => Hoverzinho nas coisas, bem legal
 Vídeo embebed Field => Youtube, vimeo e mais uma caralhada de outros
 views_slideshow => Slideshowzin, utiliza o field images
+display switch (ds) => drag and drop para displays de conteúdos (depende do layout_plugin). Tem uns screencasts pra assistir https://www.drupal.org/node/644706, mas não tem pro 8 ainda
+layout_plugin => precisa para o ds
+transliteration => traduções para upload de arquivos "Generally spoken, it takes Unicode text and tries to represent it in US-ASCII characters (universally displayable, unaccented characters) by attempting to transliterate the pronunciation expressed by the text in some other writing system to Roman letters." (nem tem pro 8, assim era feito antes pelo jeito)
+
+Display Switch (ds):
+	É um ótimo módulo para ajustar o display de conteúdos específios, aplicando um layout para ele, existem vários dispońiveis.
+	Ele usa o próprio Manage Display padrão, e para usá-lo, precisamos fazer 3 coisas:
+		1. Ativar o Full Content em Custom Display Settings
+		2. Escolher um Layout
+		3. Mudar as coisas de lugar =)
+	 Algo  extremaente legal é que você pode fazer um override dos temas, ele oferece sugestões de nomes.
+	 Você pode também adicionar classes css para personalizar ainda mais
+
+
 
 Content: (2 tipos) 
 	- Content entities => Custom fields, like nodes, guardadas no banco, custom blocks, users, taxonomy terms (s que já vem com o Drupal)
@@ -21,6 +35,9 @@ Content: (2 tipos)
 
 ver como funciona essas paradas de base theme aí
 
+Views:
+	- A home default do Drupal 8 é uma view, a Frontpage. Ela mostra todos os conteúdos Promoted to Front Page. É assim que funcioan esse check box
+	- O display do tipo attachment é o jeito Drupal de fixar um conteúdo independente dos critérios de filter e de sort da view: Crie um attachment, coloque o node que você quer e na coluna do meio ATTACHMENT SETTINGS > attach to > selecione o display que você quer. Caso o attach deva ser visto apenas por usuários anonimos, um Welcome por exemplo, você pode colocar uma permission do tipo Role e annonymous users. Acredito que seja possível colocar essa permissão no próprio conteúdo também, mas já que está usando o attach...
 
 Taxonomy:
 	Agora elas podem ter fields, graças à Entity API
@@ -31,6 +48,31 @@ User:
 Comments:
 	Entity API também, pode ter fields
 
+
+Themes: 
+	Criar um folder em themes com o nome do seu tema e cire um <nome_do_tema>.info.yml. Deve conter fields name, type, description, package e core onde, apenas o name e o core são obrigatórios.
+	Extender um tema: "base theme" no yml. classy vem com o drupal
+
+guia para themes => https://www.drupal.org/docs/8/theming
+
+
+Cache: [GRANDE NOVIDADE NO 8]
+	Isso é muito inteligente do drupal 8, fizeram cache por containers de páginas, antigamente se um menu mudava o label ou um node mudava o tídulo que estava nesse menu, a págian teria que ser reconstruída por completo. Agora, apenas o container da entidade deverá ser reonstruída. Todos são ativos por default, como blocos, users, contents, etc
+	drupal.org/developing/api/8/cache
+
+	Cacheability Metadata, 3 mais importantes:
+	 - Cache tags
+	 - Cache context
+	 - Cache max-age
+
+Configuration: [GRANDE NOVIDADE NO 8]
+	Configuration Management Core Module.
+	Em versões anteriores ao 8, as configurações eram salvas na base, tornanco muito mais dependente do que é hoje e complicado para outros ambientes devido ao fato da base poder ser bem grande em um site grande. Agora é tudo em yml files (o drush cex)
+	drupal.org/documentation/administer/config
+
+Multilingual Site: [GRANDE NOVIDADE NO 8]
+	Em versões anteriores ao 8 fazer um site multilingual era foda. Agora é simplão. Drupal baixa os pacotes de tradução pra vc e ta tudo beleza.
+multilingual_demo => Distro drupal para multilingual site
 
 
 Criamos um block para cada hotel com um file. Isso é uma bosta, quero um field file e um display desse field em um bloco. (views?)
@@ -43,3 +85,6 @@ Criamos um block para cada hotel com um file. Isso é uma bosta, quero um field 
 
 podemos contribuir colocando o JQuery aim no menu do drupal. Já anotei isso em algum lugar
 Contribuir com um módulo que permite configurações nos machine names que ele gera, como uma padronização nova. p_ para paragraphs, ct_<content_initials> para fields em conteúdos, <nome>_url para Pathauto etc
+Contribuir mudando a <label> das permissions, para pdoer clicar na linha toda e selecionar masi de uma também segurando shift, por exemplo
+
+Para autor: O vídeo 32/53 não é mais necessário, o jquery.circle.all.js já é adicionado automaticamente na instalação

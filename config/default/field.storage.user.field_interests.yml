@@ -1,0 +1,33 @@
+uuid: 6593d91d-9550-407f-86fd-243e69f7de42
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_interests
+field_name: field_interests
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '0'
+      label: 'I live in Sydnay and just want to keep up-to-date'
+    -
+      value: '1'
+      label: 'I''m visiting Sydnay and want to know what''s arround my hotel'
+    -
+      value: '2'
+      label: 'I work for a hotel'
+    -
+      value: '3'
+      label: 'I work for a landmark on your site'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,32 @@
+uuid: f1957bb3-7d0d-409b-be48-09dd33a81c55
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hotel_slides
+  module:
+    - node
+    - views
+  theme:
+    - integrity
+id: integrity_views_block__hotel_slides_block_1
+theme: integrity
+region: sidebar_first
+weight: -4
+provider: null
+plugin: 'views_block:hotel_slides-block_1'
+settings:
+  id: 'views_block:hotel_slides-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      hotels: hotels
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

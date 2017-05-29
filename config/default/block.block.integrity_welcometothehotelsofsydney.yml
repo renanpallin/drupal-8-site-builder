@@ -1,0 +1,31 @@
+uuid: 41b6005b-78e9-4def-a73f-5d15a6b29065
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+  module:
+    - block_content
+    - system
+  theme:
+    - integrity
+id: integrity_welcometothehotelsofsydney
+theme: integrity
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'block_content:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+settings:
+  id: 'block_content:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+  label: 'Welcome to the Hotels of Sydney!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

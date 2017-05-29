@@ -1,0 +1,31 @@
+uuid: f038478f-7fe7-4cf9-8cfe-5634ba0400ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:brochure:7205fc02-6593-4141-8769-10c3d6f947ac'
+  module:
+    - block_content
+    - system
+  theme:
+    - mayo
+id: mayo_ibishotelbrochure
+theme: mayo
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:7205fc02-6593-4141-8769-10c3d6f947ac'
+settings:
+  id: 'block_content:7205fc02-6593-4141-8769-10c3d6f947ac'
+  label: 'Hotel Drupal Brochure'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /node/64
+    negate: false
+    context_mapping: {  }

@@ -1,0 +1,39 @@
+uuid: 8cfe4804-4d9c-4cec-9565-7e0ff3ae075d
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: -8
+is_admin: null
+permissions:
+  - 'administer comments'
+  - 'edit own comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'access comments'
+  - 'access content'
+  - 'create article content'
+  - 'delete any article content'
+  - 'delete own article content'
+  - 'delete article revisions'
+  - 'edit any article content'
+  - 'edit own article content'
+  - 'revert article revisions'
+  - 'view article revisions'
+  - 'create page content'
+  - 'delete any page content'
+  - 'delete own page content'
+  - 'delete page revisions'
+  - 'edit any page content'
+  - 'edit own page content'
+  - 'revert page revisions'
+  - 'view page revisions'
+  - 'create hotels content'
+  - 'delete any hotels content'
+  - 'delete own hotels content'
+  - 'delete hotels revisions'
+  - 'edit any hotels content'
+  - 'edit own hotels content'
+  - 'revert hotels revisions'
+  - 'view hotels revisions'

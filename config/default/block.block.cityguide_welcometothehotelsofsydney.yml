@@ -1,0 +1,31 @@
+uuid: 2ebf12f6-7eca-49a6-af47-aa78e947c373
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+  module:
+    - block_content
+    - system
+  theme:
+    - cityguide
+id: cityguide_welcometothehotelsofsydney
+theme: cityguide
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+settings:
+  id: 'block_content:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+  label: 'Welcome to the Hotels of Sydney!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

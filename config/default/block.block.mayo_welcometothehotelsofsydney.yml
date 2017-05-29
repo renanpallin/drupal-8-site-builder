@@ -1,0 +1,31 @@
+uuid: 1cf18115-40a2-4cce-ae1a-9c3f7c92a179
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+  module:
+    - block_content
+    - system
+  theme:
+    - mayo
+id: mayo_welcometothehotelsofsydney
+theme: mayo
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+settings:
+  id: 'block_content:d37eee61-e1d5-42b3-9e3c-2d053556827c'
+  label: 'Welcome to the Hotels of Sydney!'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

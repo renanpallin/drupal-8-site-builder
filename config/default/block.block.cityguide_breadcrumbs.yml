@@ -1,0 +1,22 @@
+uuid: 18c535cf-354b-4a3d-aed1-c7473c80baa3
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cityguide
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: cityguide_breadcrumbs
+theme: cityguide
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

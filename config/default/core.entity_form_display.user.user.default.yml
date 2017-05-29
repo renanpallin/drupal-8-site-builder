@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.user.user.field_first_name
+    - field.field.user.user.field_interests
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -28,6 +29,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_interests:
+    weight: 32
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   language:
     weight: 0
   path:

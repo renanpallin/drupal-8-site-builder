@@ -403,6 +403,7 @@ display:
         type: normal
         title: FAQ
         menu_name: main
+        weight: -47
     cache_metadata:
       max-age: 0
       contexts:
